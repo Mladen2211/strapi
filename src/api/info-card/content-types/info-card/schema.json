@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_cards",
+  "info": {
+    "singularName": "info-card",
+    "pluralName": "info-cards",
+    "displayName": "Info Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "component": "info.info-item",
+      "repeatable": true
+    }
+  }
+}

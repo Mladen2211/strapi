@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_info_info_items",
+  "info": {
+    "displayName": "Info Item",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "primary_text": {
+      "type": "string"
+    },
+    "secondary_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
