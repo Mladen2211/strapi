@@ -22,9 +22,6 @@
     "card_display_title": {
       "type": "string"
     },
-    "description": {
-      "type": "blocks"
-    },
     "preview_image": {
       "type": "media",
       "multiple": true,
