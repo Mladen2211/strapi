@@ -462,6 +462,9 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     >;
     hero_description: Schema.Attribute.RichText;
     hero_greeting: Schema.Attribute.String;
+    hero_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     hero_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -521,6 +524,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.RichText;
     github_url: Schema.Attribute.String;
     live_url: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
