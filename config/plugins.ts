@@ -1,5 +1,8 @@
 export default () => ({
-  "populate-deep": {
+  'populate-all': {
     enabled: true,
+    config: {
+      relations: true,
+    },
   },
 });
